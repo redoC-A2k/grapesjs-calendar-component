@@ -14,8 +14,16 @@
   },
   "keywords": [
     "grapesjs",
-    "plugin"
+    "plugin",
+    "full calendar",
+    "calendar",
+    "component"
   ],
+  "author": "Afshan Ahmed Khan",
+  "bugs": {
+    "url": "https://github.com/redoC-A2k/grapesjs-calendar-component/issues"
+  },
+  "homepage": "https://github.com/redoC-A2k/grapesjs-calendar-component#readme",
   "devDependencies": {
     "grapesjs-cli": "^4.1.3"
   },
