@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Grapesjs Calendar Component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/grapesjs"></script>
+  <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="main">
+    <div id="gjs"></div>
+  </section>
+
+  <script type="text/javascript">
+    // Wait for the plugin to be injected by the dev server
+    window.onload = () => {
+      window.editor = grapesjs.init({
+        container: "#gjs",
+        width: "100%",
+        height: "98vh",
+        plugins: [ 'gjs-blocks-basic','grapesjs-calendar-component'],
+        pluginsOpts: {
+          'gjs-blocks-basic': {},
+          'grapesjs-calendar-component': { /* Test here your options  */ },
+        },
+        canvas:{
+          scripts:["https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"]
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
