@@ -4,6 +4,5 @@ private/
 node_modules/
 *.log
 _index.html
-dist/
 stats.json
 node_modules
