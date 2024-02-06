@@ -1,6 +1,8 @@
 import { Plugin } from 'grapesjs';
 
-export type PluginOptions = {};
+export type PluginOptions = {
+	[key: string]: any;
+};
 declare const CalendarPlugin: Plugin<PluginOptions>;
 
 export {
